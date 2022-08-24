@@ -1,4 +1,4 @@
-let id = "no";
+let id = "first";
 
 displayTask();
 
@@ -11,7 +11,7 @@ function addTask(){
     }
     else{
         
-        if(id=='no'){
+        if(id=='first'){
             let taskArray = getTask();
             if(taskArray == null){
                 let data = [task];
