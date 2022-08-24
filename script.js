@@ -44,7 +44,7 @@ function displayTask(){
         let serialNumber = 1;
 
         for(let row in rowData){
-            rowList = rowList + `<tr><td>${serialNumber}</td><td>${rowData[row]}</td><td><a href="javascript:void(0)" onclick="editTask(${row})"><i class="fa-solid fa-pen" style="color:black;"></i></a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(0)" onclick="deleteTask(${row})"><i class="fa-solid fa-trash" style="font-size:20px;color:red;"></i></a></td></tr>`;
+            rowList = rowList + `<tr><td>${serialNumber}</td><td>${rowData[row]}</td><td><a href="javascript:void(0)" onclick="editTask(${row})"><i class="fa-solid fa-pen" id="icon1"></i></a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(0)" onclick="deleteTask(${row})"><i class="fa-solid fa-trash" id="icon2"></i></a></td></tr>`;
             serialNumber++;
         }
         document.getElementById('rowsData').innerHTML=rowList;
@@ -70,7 +70,7 @@ function deleteTask(rowID){
 
 function searchTask(){
 
-   let taskArray = getTask();
+    let taskArray = getTask();
     let searchQuery = document.getElementById('search').value;
     let rowSelector = [];
     let selectRow = '';
