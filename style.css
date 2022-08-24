@@ -134,3 +134,159 @@ body,html{
     border-radius: 6px solid black;
     text-align: center;
 }
+
+#icon1{
+    font-size: 20px;
+    color:black;
+}
+
+#icon2{
+    font-size: 20px;
+    color: red;
+    padding-left: 3px;
+}
+
+@media screen and (max-width: 450px){
+    
+    .bg-image{
+        position: relative;
+        background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("images/bg_image.jpg");
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: 1;
+    }
+    
+    .applist{
+        position: fixed;
+        height: 670px;
+        margin-top: 30px;
+        width: 230px;
+        margin-left: 20%;
+        margin-bottom: 20px;
+        align-items: center;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+
+    .applist::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .applist h1{
+        background-color:orange;
+        color:white ;
+        border-radius: 6px;
+        height: 30px;
+        text-align: center;
+        padding-top: 5px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        -webkit-text-stroke: 1px black;
+    }
+    
+    .applist #search{
+        width: 98%;
+        margin-top: 30px;
+        border-radius: 6px;
+        height: 30px;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    
+    .applist #search::placeholder{
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .buttons1{
+        height: 25px;
+        width: 60px;
+        border-radius: 6px;
+        background-color: green;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: white;
+        margin-top: 20px;
+        margin-left: 18%;
+        padding: 3px;
+    }
+    
+    .buttons1:hover{
+        cursor: pointer;
+    }
+    
+    .buttons2{
+        height: 25px;
+        width: 60px;
+        border-radius: 6px;
+        background-color: green;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: white;
+        margin-top: 20px;
+        margin-left: 20px;
+        padding: 3px;
+    }
+    
+    .buttons2:hover{
+        cursor: pointer;
+    }
+
+    .tb{
+        margin-top: 40px;
+        width: 100%;
+        border: 2px solid black;
+        border-radius: 6px;
+    }
+    
+    .tb th{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        background-color: azure;
+        padding: 2px;
+        border-radius: 6px solid black;
+    }
+
+    #rowsData{
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+    
+    #rowsData tr td{
+        padding: 2px;
+    }
+
+    #rowsData tr:nth-child(even){
+        background-color: green ;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        border-radius: 6px solid black;
+        text-align: center;
+    }
+    
+    #rowsData tr:nth-child(odd){
+        background-color: orange;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        border-radius: 6px solid black;
+        text-align: center;
+    }
+
+    #icon1{
+        font-size: 12px;
+        color:black;
+        padding: 1px ;
+    }
+
+    #icon2{
+        font-size: 12px;
+        color: red;
+        padding-left: 1px;
+    }
+
+}
