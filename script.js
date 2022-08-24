@@ -49,6 +49,9 @@ function displayTask(){
         }
         document.getElementById('rowsData').innerHTML=rowList;
     }
+    else{
+        alert(`No tasks for the day!`);
+    }
 
 }
 
