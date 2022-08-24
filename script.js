@@ -76,6 +76,9 @@ function searchTask(){
         if(searchQuery == taskArray[q]){
             rowSelector.push(q);
         }
+        else{
+            alert(`Queried task is not present!`);
+        }
     }
 
     for(let k=0;k<rowSelector.length;k++){
