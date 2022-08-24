@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toDo App</title>
+    <link rel="icon" href="images/title_bar_logo.jpg" type="image/icon type">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+    <div class="bg-image">
+        <div class="applist">
+            <h1>To Do list...</h1>
+            <form>
+                <input type="text" id="search" placeholder="Search/Add Tasks">
+                <input type="button" class="buttons1" value="Search" onclick="searchTask()">
+                <input type="button" class="buttons2" value="Add Task" onclick="addTask()">
+            </form>
+            <table class="tb">
+                <tr>
+                    <th style="width: 20%;">Task No.</th>
+                    <th style="width: 60%;">Task</th>
+                    <th>Action</th>
+                </tr>
+                <tbody id="rowsData">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
