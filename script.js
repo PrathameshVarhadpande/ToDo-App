@@ -71,16 +71,19 @@ function searchTask(){
     let searchQuery = document.getElementById('search').value;
     let rowSelector = [];
     let selectRow = '';
+    let check = false;
 
     for(let q=0;q<taskArray.length;q++){
         if(searchQuery == taskArray[q]){
             rowSelector.push(q);
-        }
-        else{
-            alert(`Queried task is not present!`);
+            check = true;
         }
     }
 
+    if(check == false){
+        alert(`Queried task is not present!`);
+    }
+    
     for(let k=0;k<rowSelector.length;k++){
         let data = rowSelector[k];
             selectRow = selectRow + `<tr><td>${data+1}</td><td>${taskArray[data]}</td><td><a href="javascript:void(0)" onclick="editTask(${data})"><i class="fa-solid fa-pen" style="color:black;"></i></a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(0)" onclick="deleteTask(${data})"><i class="fa-solid fa-trash" style="font-size:20px;color:red;"></i></a></td></tr>`;
